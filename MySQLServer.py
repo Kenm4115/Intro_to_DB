@@ -9,7 +9,7 @@ def create_database():
         connection = mysql.connector.connect(
             host='localhost',
             user='Kenm',
-            password='Royal#1zerker',
+            password='1234',
             database='alx_book_store'
         )
 
@@ -38,13 +38,10 @@ Write a simple python script that creates the database alx_book_store in your My
 
 Name of python script should be MySQLServer.py
 If the database alx_book_store already exists, your script should not fail
-You are not allowed to use the SELECT or SHOW statements
-NOTE :
-
+You are not allowed to use the select or show statements
+ NOTE :
 Required to print message such as Database 'alx_book_store' created successfully! when database is successfully created.
-
 Print error message to handle errors when failing to connect to the DB.
-
 handle open and close of the DB in your script
 
 """
