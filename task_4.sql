@@ -1,5 +1,5 @@
 
-SELECT * FROM alx_book_store.books;
+SHOW COLUMNS FROM books;
 --     COLUMN_NAME, 
 --     DATA_TYPE, 
 --     IS_NULLABLE, 
