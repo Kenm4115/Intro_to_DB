@@ -11,7 +11,7 @@ SELECT
     IS_NULLABLE,
     COLUMN_DEFAULT
 FROM 
-    information_schema.COLUMNS
+    INFORMATION_SCHEMA.COLUMNS,COLUMN_TYPE
 WHERE 
     TABLE_NAME = 'Books'
     AND TABLE_SCHEMA = 'alx_book_store';
