@@ -9,7 +9,8 @@ def create_database():
         connection = mysql.connector.connect(
             host='localhost',
             user='Kenm',
-            password='1234'
+            password='Royal#1zerker',
+            database='alx_book_store'
         )
 
         if connection.is_connected():

@@ -1,15 +1,19 @@
 
-SHOW COLUMNS FROM alx_book_store.books;
---     COLUMN_NAME, 
---     DATA_TYPE, 
---     IS_NULLABLE, 
---     COLUMN_DEFAULT, 
---     CHARACTER_MAXIMUM_LENGTH 
--- FROM 
---     INFORMATION_SCHEMA.COLUMNS 
--- WHERE 
---     TABLE_NAME = 'Books' 
---     AND TABLE_SCHEMA = 'alx_book_store';
+USE alx_book_store;
+
+-- Select column details from the information_schema
+SELECT 
+    COLUMN_NAME,
+    DATA_TYPE,
+    CHARACTER_MAXIMUM_LENGTH AS max_length,
+    IS_NULLABLE,
+    COLUMN_DEFAULT
+FROM 
+    information_schema.COLUMNS
+WHERE 
+    TABLE_NAME = 'Books' AND 
+    TABLE_SCHEMA = DATABASE();
+
 
 
 /*
